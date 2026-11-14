@@ -1,4 +1,4 @@
-const CACHE='family-atelier-web-v1.3';
+const CACHE='family-atelier-web-v1.4';
 const FILES=['./','./index.html','./manifest.webmanifest','./icon-180.png','./brand-mark.svg','./icon-192.png','./icon-512.png'];
 const allowed=new Set(FILES.map(path=>new URL(path,self.registration.scope).href));
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting())));

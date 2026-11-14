@@ -64,6 +64,7 @@ dialog{padding:20px 21px;background:var(--surface);color:var(--ink);border:1px s
     <button type="button" id="atelier-import-own" hidden>Create workspace from local data</button>
     <button type="button" id="atelier-signout" hidden>Sign out</button>
   </div>
+  <label id="atelier-access-box">Access code from your Download &amp; Access PDF (not needed if you were invited) <input id="atelier-access" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="AB-1234-5678" maxlength="12"></label>
   <form id="atelier-join" hidden>
     <label>Workspace code <input name="code" required autocomplete="off"></label>
     <button type="submit">Join shared workspace</button>
@@ -82,7 +83,11 @@ dialog{padding:20px 21px;background:var(--surface);color:var(--ink);border:1px s
       <button type="button" id="atelier-export-draft" hidden>Download draft</button>
       <button type="button" id="atelier-load-cloud" hidden>Load shared version</button>
       <button type="button" id="atelier-leave" hidden>Return to local planner</button>
+      <button type="button" id="atelier-delete-workspace" hidden>Delete cloud workspace</button>
     </div>
+  </div>
+  <div class="cloud-actions">
+    <button type="button" id="atelier-delete-account" hidden>Delete account &amp; cloud data</button>
   </div>
 </dialog>
 <noscript>This planner requires JavaScript. Open the HTML file in a browser with JavaScript enabled.</noscript><script>
